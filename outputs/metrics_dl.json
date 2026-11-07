@@ -1,0 +1,42 @@
+{
+  "models": {
+    "LSTM": {
+      "RMSE": 18.5,
+      "MAE": 13.54,
+      "NASA_score": 953.6,
+      "val_RMSE": 11.54,
+      "params": 54849,
+      "epochs": 14,
+      "train_time_s": 80.1
+    },
+    "GRU": {
+      "RMSE": 17.59,
+      "MAE": 12.69,
+      "NASA_score": 890.2,
+      "val_RMSE": 12.07,
+      "params": 41665,
+      "epochs": 9,
+      "train_time_s": 33.4
+    },
+    "Transformer": {
+      "RMSE": 19.23,
+      "MAE": 13.04,
+      "NASA_score": 1540.3,
+      "val_RMSE": 14.1,
+      "params": 71681,
+      "epochs": 9,
+      "train_time_s": 61.3
+    },
+    "Ensemble (Ridge 0.0, LightGBM 0.3, LSTM 0.7)": {
+      "RMSE": 18.25,
+      "MAE": 13.64,
+      "NASA_score": 856.1
+    }
+  },
+  "best_deep_model": "LSTM",
+  "ensemble_weights": [
+    0.0,
+    0.3,
+    0.7
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "alarm_threshold": 0.2745,
+  "engines_evaluated": 40,
+  "engines_alarmed": 40,
+  "median_lead_time_cycles": 68.5,
+  "p10_lead_time_cycles": 36.8,
+  "alarms_while_clearly_healthy(RUL>150)": 3
+}

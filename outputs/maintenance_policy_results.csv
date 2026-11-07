@@ -1,0 +1,6 @@
+policy,total_cost_inr,unplanned_failures,cost_per_engine_inr,saving_vs_reactive_pct,saving_vs_fixed_pct
+Reactive (run to failure),125000000,50,2500000.0,0.0,-137.3
+Fixed interval (every 150 cycles),52680000,0,1053600.0,57.9,0.0
+"Predictive: LightGBM point, margin 8",35240000,2,704800.0,71.8,33.1
+"Predictive: LightGBM lower bound (q10), margin 2",33628000,1,672560.0,73.1,36.2
+Oracle (perfect knowledge),30000000,0,600000.0,76.0,43.1

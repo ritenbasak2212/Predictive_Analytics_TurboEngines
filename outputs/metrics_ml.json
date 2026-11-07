@@ -1,0 +1,79 @@
+{
+  "test_last_cycle": {
+    "Baseline: mean RUL": {
+      "RMSE": 39.11,
+      "MAE": 33.97,
+      "NASA_score": 21563.8
+    },
+    "Ridge regression": {
+      "RMSE": 18.21,
+      "MAE": 14.1,
+      "NASA_score": 768.5
+    },
+    "LightGBM": {
+      "RMSE": 19.6,
+      "MAE": 14.68,
+      "NASA_score": 1301.7
+    }
+  },
+  "test_all_rows": {
+    "LightGBM (all test rows)": {
+      "RMSE": 12.71,
+      "MAE": 8.11
+    }
+  },
+  "cross_validation": {
+    "LightGBM 5-fold grouped CV (all training cycles)": {
+      "RMSE": 13.34,
+      "MAE": 8.58
+    }
+  },
+  "prediction_interval": {
+    "nominal_coverage": 0.8,
+    "coverage_last_cycle_100_engines": 0.72,
+    "coverage_all_test_rows": 0.871,
+    "mean_interval_width": 36.2
+  },
+  "failure_classifier": {
+    "ROC_AUC": 0.9988,
+    "PR_AUC": 0.8434,
+    "cost_optimal_threshold": 0.06,
+    "precision": 0.516,
+    "recall": 0.973,
+    "confusion_matrix": {
+      "TP": 110,
+      "FP": 103,
+      "FN": 3,
+      "TN": 16163
+    }
+  },
+  "selected_sensors": [
+    "s2",
+    "s3",
+    "s4",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s11",
+    "s12",
+    "s13"
+  ],
+  "n_features": 81,
+  "sensor_correlation_with_rul": {
+    "s6": 0.761,
+    "s13": 0.75,
+    "s9": 0.746,
+    "s2": 0.717,
+    "s8": 0.699,
+    "s12": 0.696,
+    "s7": 0.673,
+    "s3": 0.648,
+    "s4": 0.625,
+    "s11": 0.575,
+    "s10": 0.012,
+    "s14": 0.007,
+    "s1": 0.005,
+    "s5": 0.004
+  }
+}

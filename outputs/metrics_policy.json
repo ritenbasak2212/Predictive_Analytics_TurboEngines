@@ -1,0 +1,50 @@
+{
+  "engines_evaluated": 50,
+  "fixed_interval_K": 150,
+  "tuned_margins": {
+    "pred": 8,
+    "q10": 2
+  },
+  "results": [
+    {
+      "policy": "Reactive (run to failure)",
+      "total_cost_inr": 125000000,
+      "unplanned_failures": 50,
+      "cost_per_engine_inr": 2500000.0,
+      "saving_vs_reactive_pct": 0.0,
+      "saving_vs_fixed_pct": -137.3
+    },
+    {
+      "policy": "Fixed interval (every 150 cycles)",
+      "total_cost_inr": 52680000,
+      "unplanned_failures": 0,
+      "cost_per_engine_inr": 1053600.0,
+      "saving_vs_reactive_pct": 57.9,
+      "saving_vs_fixed_pct": 0.0
+    },
+    {
+      "policy": "Predictive: LightGBM point, margin 8",
+      "total_cost_inr": 35240000,
+      "unplanned_failures": 2,
+      "cost_per_engine_inr": 704800.0,
+      "saving_vs_reactive_pct": 71.8,
+      "saving_vs_fixed_pct": 33.1
+    },
+    {
+      "policy": "Predictive: LightGBM lower bound (q10), margin 2",
+      "total_cost_inr": 33628000,
+      "unplanned_failures": 1,
+      "cost_per_engine_inr": 672560.0,
+      "saving_vs_reactive_pct": 73.1,
+      "saving_vs_fixed_pct": 36.2
+    },
+    {
+      "policy": "Oracle (perfect knowledge)",
+      "total_cost_inr": 30000000,
+      "unplanned_failures": 0,
+      "cost_per_engine_inr": 600000.0,
+      "saving_vs_reactive_pct": 76.0,
+      "saving_vs_fixed_pct": 43.1
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "shap_top10": {
+    "s13_mean5": 9.77,
+    "s9_mean5": 6.66,
+    "cycle": 3.89,
+    "s6_mean5": 3.33,
+    "s9_mean15": 3.25,
+    "s8_mean5": 2.17,
+    "s2_mean5": 1.93,
+    "s6_mean15": 1.83,
+    "s13_mean15": 1.77,
+    "s6_mean30": 1.35
+  },
+  "local_explanation_engine": 93,
+  "drift_psi": {
+    "s9": 7.078,
+    "s6": 6.546,
+    "s13": 5.772,
+    "op2": 0.591,
+    "op1": 0.58,
+    "op3": 0.037,
+    "s10": 0.008,
+    "s8": 0.004,
+    "s14": 0.004,
+    "s3": 0.004,
+    "s1": 0.004,
+    "s2": 0.003,
+    "s11": 0.003,
+    "s12": 0.003,
+    "s5": 0.003,
+    "s7": 0.001,
+    "s4": 0.001
+  },
+  "drift_features_significant": [
+    "s9",
+    "s6",
+    "s13",
+    "op2",
+    "op1"
+  ],
+  "max_psi_clean_test": 0.015,
+  "lgbm_clean_test": {
+    "RMSE": 19.6,
+    "MAE": 14.68,
+    "NASA_score": 1301.7
+  },
+  "lgbm_drift_batch": {
+    "RMSE": 32.22,
+    "MAE": 26.93,
+    "NASA_score": 3054.7
+  }
+}
